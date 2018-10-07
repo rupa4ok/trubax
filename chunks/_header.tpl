@@ -8,7 +8,7 @@
         <div class="logo-sm text-center hidden-sm-up"></div>
         <div class="row vertical-align">
             <div class="col-lg-3 col-sm-4 col-sm-3 hidden-xs-down logo">
-                <a href="/"><img src="wa-data/public/shop/themes/classic/img/logo.png" alt="Демо CMS"/></a>
+                <a href="/"><img src="images/logo.png" alt="Демо CMS"/></a>
             </div>
             <div class="col-lg-6 hidden-md-down header-align account-border">
                 <h3>Доставим ваш заказ в течении 48 часов!</h3>

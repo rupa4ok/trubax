@@ -3,12 +3,13 @@
 
     <div class="menu-v-background" id="menu-standart">
 
-        {'!pdoMenu'|snippet:[
+        {'pdoMenu'|snippet:[
         'parents' => '2',
         'outerClass' => 'menu-v',
         'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
         'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
         'parentClass' => 'tree',
+        'where' => '{"class_key":"msCategory"}'
         ]}
 
     </div>
@@ -31,7 +32,7 @@
         </div>
     </div>
 
-    <!-- plugin hook: 'frontend_nav' -->
+    <!--
 
 
     <div class="lastphoto hidden-sm-down">
@@ -62,7 +63,7 @@
         <a href="/tag/ipad/" style="font-size: 150%;">ipad</a>
         <a href="/tag/mac+mini/" style="font-size: 80%;">mac mini</a>
         <a href="/tag/macbook/" style="font-size: 80%;">macbook</a>
-    </div>
+    </div>-->
 
 
 </div>

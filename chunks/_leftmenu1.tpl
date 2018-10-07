@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-lg-3 col-md-4 col-sm-12 filter">
-        <div class="hidden-sm-up"><a href="#" class="show-filter">Развернуть фильтр</a></div>
+        <!--<div class="hidden-sm-up"><a href="#" class="show-filter">Развернуть фильтр</a></div>
         <div class="panel-default hidden-xs-down">
             <div class="filters-background filters ajax">
                 <form method="get" action="/category/ipad_1/" data-loading="/wa-data/public/shop/themes/classic/img/loading.gif" class="filterform">
@@ -81,13 +81,22 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div>-->
 
         <div class="menu-v-background" id="menu-standart">
-            <ul class="menu-v"><li class="selected"><a href="/category/ipad_1/">iPad</a></li><li class="tree"><a href="/category/mac/">MAC</a><ul class="menu-v"><li class="tree"><a href="/category/mac/macbook-air/">MacBook Air</a><ul class="menu-v"><li><a href="/category/mac/macbook-air/aksessuary/">Аксессуары</a></li></ul><div class="plus">+</div></li><li><a href="/category/mac/macbook-pro/">MacBook Pro</a></li><li><a href="/category/mac/imac/">iMac</a></li><li><a href="/category/mac/mac-mini/">Mac Mini</a></li></ul><div class="plus">+</div></li><li class="tree"><a href="/category/iphone/">iPhone</a><ul class="menu-v"><li><a href="/category/iphone/32-gb/">32 Gb</a></li><li><a href="/category/iphone/16-gb/">16 Gb</a></li></ul><div class="plus">+</div></li><li><a href="/category/ipad/">iPad</a></li><li><a href="/category/ip/">iPod</a></li><li><a href="/category/akustika/">Акустика</a></li><li><a href="/category/aksessuary/">Аксессуары</a></li><li class="tree"><a href="/category/aksessuary-dlya-avtomobiley/">Аксессуары для автомобилей</a><ul class="menu-v"><li><a href="/category/aksessuary-dlya-avtomobiley/stelka/">Стелка</a></li><li><a href="/category/aksessuary-dlya-avtomobiley/ko/">Колеса</a></li></ul><div class="plus">+</div></li><li><a href="/category/raznye-tovary/">Разные товары</a></li></ul>
+
+            {'pdoMenu'|snippet:[
+            'parents' => '2',
+            'outerClass' => 'menu-v',
+            'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+            'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+            'parentClass' => 'tree',
+            'where' => '{"class_key":"msCategory"}'
+            ]}
+
         </div>
 
-        <div class="news hidden-xs-down">
+        <!--<div class="news hidden-xs-down">
             <h3>Новости</h3>
             <hr>
             <div class="date">
@@ -124,8 +133,6 @@
             <a href="/tag/ipad/" style="font-size: 150%;">ipad</a>
             <a href="/tag/mac+mini/" style="font-size: 80%;">mac mini</a>
             <a href="/tag/macbook/" style="font-size: 80%;">macbook</a>
-        </div>
-
-
+        </div>-->
 
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{$_modx->resource.pagetitle}</title>
-    <base href="http://s15757.h4.modhost.pro" />
+    <base href="http://s15764.h4.modhost.pro" />
     <meta name="Keywords" content=""/>
     <meta name="Description" content=""/>
     <meta name="viewport" content="width=1180"/>
@@ -42,14 +42,5 @@
     <script type="text/javascript" src="wa-apps/shop/js/lazy.load_v7_0_0_44568.js"></script>
     <script type="text/javascript" src="wa-data/public/shop/themes/classic/jquerycountdowntimer/jquery.countdownTimer.min_v_1_7_16.js"></script>
 
-    <div class="panelbutton"><a href="#" class="panelclick showhelp"  data-toggle="tooltip" data-placement="right" title="Сменить цветовую схему"><span class="icon-info-sign"></span></a>
-        <div class="colorchange" style="display:none;">
-            <a href="#" class="colorch" rel="style-red.css"><div style="background:#a10000;" class="panelblock"></div></a>
-            <a href="#" class="colorch" rel="style-green.css"><div style="background:#17a100;" class="panelblock"></div></a>
-            <a href="#" class="colorch" rel="style-black.css"><div style="background:#3e3e3e;" class="panelblock"></div></a>
-            <a href="#" class="colorch" rel="style-blue.css"><div style="background:#1891d6;" class="panelblock"></div></a>
-
-        </div>
-    </div>
     <script type="text/javascript" src="wa-data/public/shop/themes/classic/script.js"></script>
 </head>

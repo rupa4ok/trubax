@@ -19,7 +19,7 @@
             Количество запросов: {$info.queries}
             Источник: {$info.source}
 
-            <div class="webasyst-copyright"><a href="http://www.shop-script.ru/">Создание интернет-магазина</a> — Shop-Script 6</div>                </div>
+            <div class="webasyst-copyright"></div>                </div>
         <div class="col-lg-4  col-md-6  col-xs-12 col-sm-12">
             <h5>Следите за нами:</h5>
             <ul class="inline social">
@@ -72,21 +72,6 @@
                             <div class="wa-value">
                                 <input type="hidden" name="subject" value="Запрос с сайта">
                                 <textarea  name="body"></textarea>
-                            </div>
-                        </div>
-                        <div class="wa-field">
-                            <div class="wa-value">
-                                <div class="wa-captcha">
-                                    <p>
-                                        <img class="wa-captcha-img" src="shop/image_rid_15383411965bb1394c6a392.png" alt="CAPTCHA" title="Обновить капчу (CAPTCHA)">
-                                        <strong>&rarr;</strong>
-                                        <input type="text" name="captcha" class="wa-captcha-input" autocomplete="off">
-                                    </p>
-                                    <p>
-                                        <a href="#" class="wa-captcha-refresh">Обновить капчу (CAPTCHA)</a>
-                                    </p>
-
-                                </div>
                             </div>
                         </div>
                         <div class="wa-field">

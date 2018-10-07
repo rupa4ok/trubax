@@ -3,7 +3,6 @@
 {block 'main'}
     <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
 
-
         <div class="slider-wrapper hidden-sm-down">
             <div class="single-slider" style="visibility: hidden;">
                 <div class="fs_loader"></div>

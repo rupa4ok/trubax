@@ -8,6 +8,7 @@
             'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
             'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
             'parentClass' => 'tree',
+            'level' => '1'
             ]}
 
             <div class="hidden-sm-up">

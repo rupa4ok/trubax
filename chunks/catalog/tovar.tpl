@@ -1,73 +1,34 @@
-<form method="post" action=""
-      accept-charset="utf-8" class="shop2_product_item shop2-product-item">
-
-    <input type="hidden" name="kind_id" value="1110543261">
-    <input type="hidden" name="product_id" value="890055461">
-    <input type="hidden" name="meta" value="null">
-
-    <div class="product-top clear-self">
-
-        <div class="product-label">
-        </div>
-
-        <a href="{$id|url}">
-        <div class="product_image" style="background-image: url(itigo_maki.jpg);">
-        </div>
-        </a>
-        <div class="product_top_inner">
-
-
-            <a href="{$id|url}"><div class="product-name">{$pagetitle}</div></a>
-
-            <div class="product-article"><span>Артикул:</span> R053</div>
-
-            <div class="product-anonce">
-                Клубника, банан, яблоко, сыр «сладкий фетачини», топпинг «клубника», тесто
-                «спринг»
-            </div>
-        </div>
-    </div>
-
-    <div class="product_bot_wrapper">
-        <div class="product_bot_in">
-            <div class="product_bot_left">
-                <a href="{$id|url}"><div class="product-name">{$pagetitle}</div></a>
-            </div>
-            <div class="product_bot_center">
-                <div class="product-article"><span>Артикул:</span> R053</div>
-            </div>
-        </div>
-
-        <div class="product_bottom_bl">
-            <div class="product_bot">
-                <div class="product-price">
-                    <div class="amount-title">Количество:</div>
-
-                    <div class="price-current">
-                        <strong>{$price}</strong> <span class="rub_black"></span></div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" itemscope="" itemtype="http://schema.org/Product">
+    <div class="thumbnail">
+        <form data-preview="" method="post" action="">
+            <input type="hidden" name="product_id" value="19">
+            <div class="image-block">
+                <div class="zoom-image">
+                    <a href="{$id|url}"
+                       title="{$pagetitle}"><img itemprop="image"
+                                                                                    alt="{$pagetitle}"
+                                                                                    src="/wa-data/public/shop/products/19/00/19/images/58/58.180.jpg"></a>
                 </div>
-                <div class="product_buttons">
-
-                    <div class="product-amount">
-                        <div class="amount-title">Кол-во</div>
-
-                        <div class="shop2-product-amount">
-                            <button type="button" class="amount-minus" disabled="disabled">
-                                −
-                            </button>
-                            <input type="text" name="amount" maxlength="4" value="1">
-                            <button type="button" class="amount-plus">+</button>
-                        </div>
-                    </div>
-
-                    <button class="shop_product_button type-2 buy" type="submit">
-                        <span>Купить</span>
-                    </button>
-
-                    <input type="hidden" value="Итиго маки" name="product_name">
-                    <input type="hidden" value=""
-                           name="product_link"></div>
             </div>
-        </div>
+            <div class="caption">
+                <div class="name"><a href="{$id|url}" itemprop="name">{$pagetitle}</a></div>
+                <div class="description" itemprop="description" style="display: none"></div>
+                <div itemprop="offers" class="offers" itemscope="" itemtype="http://schema.org/Offer">
+                    <div class="row-fluid buy"
+                         data-name="{$pagetitle}"
+                         data-url="/imac-215-core-i5-27ggts-imac-215/">
+                        <div class="price text-center" data-price="{$price} руб.">{$price} руб.
+                            <meta itemprop="price" content="{$price}">
+                            <meta itemprop="priceCurrency" content="RUB">
+                            <link itemprop="availability" href="http://schema.org/InStock">
+                        </div>
+                        <div class="text-center buy_button"><a href="#"
+                                                               class="btn btn-primary blue addtocart"><i
+                                        class="fa fa-shopping-cart"></i>Купить</a></div>
+                        <link itemprop="availability" href="http://schema.org/OutOfStock">
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-</form>
+</div>

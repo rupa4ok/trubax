@@ -7,7 +7,7 @@
                     <a href="{$id|url}"
                        title="{$pagetitle}"><img itemprop="image"
                                                                                     alt="{$pagetitle}"
-                                                                                    src="/wa-data/public/shop/products/19/00/19/images/58/58.180.jpg"></a>
+                                                                                    src="{$image | phpthumbon : "w=170&h=170&zc=1"}"></a>
                 </div>
             </div>
             <div class="caption">
@@ -17,14 +17,6 @@
                     <div class="row-fluid buy"
                          data-name="{$pagetitle}"
                          data-url="/imac-215-core-i5-27ggts-imac-215/">
-                        <div class="price text-center" data-price="{$price} руб.">{$price} руб.
-                            <meta itemprop="price" content="{$price}">
-                            <meta itemprop="priceCurrency" content="RUB">
-                            <link itemprop="availability" href="http://schema.org/InStock">
-                        </div>
-                        <div class="text-center buy_button"><a href="#"
-                                                               class="btn btn-primary blue addtocart"><i
-                                        class="fa fa-shopping-cart"></i>Купить</a></div>
                         <link itemprop="availability" href="http://schema.org/OutOfStock">
                     </div>
                 </div>

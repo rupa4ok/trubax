@@ -19,7 +19,9 @@
 
                 {$_modx->runSnippet('!msProducts@PropertySet', [
                 'parents' => $_modx->resource.id,
-                'tpl' => '@FILE /chunks/catalog/tovar.tpl'
+                'tpl' => '@FILE /chunks/catalog/tovar.tpl',
+                'includeTVs' => 'image',
+                'where' => '{"class_key":"msCategory"}'
                 ])}
 
             </div>

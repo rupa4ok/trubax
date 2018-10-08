@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-7 col-xs-5">
 
-            {'!pdoMenu'|snippet:[
+            {'pdoMenu'|snippet:[
             'parents' => '0',
             'outerClass' => 'main-h menu-h hidden-xs-down',
             'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',

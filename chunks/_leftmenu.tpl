@@ -3,14 +3,19 @@
 
     <div class="menu-v-background" id="menu-standart">
 
-        {'pdoMenu'|snippet:[
-        'parents' => '2',
-        'outerClass' => 'menu-v',
-        'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
-        'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
-        'parentClass' => 'tree',
-        'where' => '{"class_key":"msCategory"}'
-        ]}
+        {if !$snippet = $_modx->cacheManager->get('cache_key')}
+            {set $snippet = $_modx->runSnippet('!pdoMenu', [
+            'parents' => '2',
+            'outerClass' => 'menu-v',
+            'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+            'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+            'parentClass' => 'tree',
+            'where' => '{"class_key":"msCategory"}'
+            ])}
+            {set $null = $_modx->cacheManager->set('cache_key', $snippet, 1800)}
+        {/if}
+
+        {$snippet}
 
     </div>
 

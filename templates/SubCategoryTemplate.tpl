@@ -32,8 +32,8 @@
             <div class="clearfix"><br></div>
             <div class="row catalog">
 
-                <div class="col-md-12">
-                    <div class="tableHeader">
+                <div class="col-md-12 ms2_product">
+                    <div class="item">
                         <div class="first">Артикул</div>
                         <div class="second">Наименование</div>
                         <div class="three">Цена (с НДС)</div>

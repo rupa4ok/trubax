@@ -22,13 +22,13 @@
 
                     <div class="image" id="product-core-image">
                             <img itemprop="image" id="product-image" alt="{$pagetitle}" src="[[#[[*parent]].image:phpthumbon=`w=250&h=250&zc=1`]]">
+
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="cart priceblock" id="cart-flyer">
-
                     <form id="cart-form" method="post" action="/cart/add/">
                         <div class="stocks">
 
@@ -43,7 +43,6 @@
                         <p class="summary">Артикул: {$_modx->resource.article}</p><hr>
 
                         <div class="purchase">
-
                             <div class="add2cart cart-group">
                                 <input type="hidden" name="product_id" value="1">
                                 <div class="select_quantity">
@@ -62,7 +61,6 @@
                             </div>
                         </div>
                     </form>
-
                 </div>
             </div>
         </div>

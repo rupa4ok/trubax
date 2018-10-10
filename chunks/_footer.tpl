@@ -1,18 +1,22 @@
 <div class="footer">
-    <ul class="inline footer-menu">
-        <li><a href="/">Магазин</a></li>
-        <li>|</li>
-        <li><a href="/blog/">Новости</a></li>
-        <li>|</li>
-        <li><a href="/blog/stati/">Статьи</a></li>
-        <li>|</li>
-        <li><a href="/photos/">Галерея</a></li>
-        <li>|</li>
-        <li><a href="/dostavka/">Доставка</a></li>
-    </ul>
+    <div class="row">
+    <div class="col-md-8">
+       {'pdoMenu'|snippet:[
+            'parents' => '0',
+            'outerClass' => 'inline footer-menu',
+            'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+            'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+            'parentClass' => 'tree',
+            'level' => '1'
+            ]} 
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="call_back" style="inline">Отправить запрос</a>
+    </div>
+    </div>
     <div class="row">
         <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 hidden-md-down">
-            <div class="copyright">(c) 2016 - Classic</div>
+            <div class="copyright">(c) 2018</div>
             {set $info = $_modx->getInfo('', false)}
             Время работы: {$info.totalTime}
             Время запросов: {$info.totalTime}
@@ -38,7 +42,8 @@
         </div>
         <div class="col-lg-4  col-md-6  col-xs-12 col-sm-12">
             <h5>Контакты:</h5>
-            117447, г. Москва, ул. Тверская, д. 13, офис 506
+            117447, г. Москва, ул. Тверская, д. 13, офис 506<br>
+            +7 (499) 394-64-59<br>info@mail.ru
         </div>
     </div>
 </div>

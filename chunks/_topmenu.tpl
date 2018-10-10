@@ -18,20 +18,18 @@
             </div>
         </div>
 
-        <div class="col-lg-4 col-md-3 col-sm-7 col-xs-5">
+        <div class="col-lg-3 col-md-3 col-sm-7 col-xs-5">
             <a href="#" class="call_back">Отправить запрос</a>
         </div>
 
         <div class="col-lg-2 col-md-3 col-sm-5 col-xs-7">
-            <form method="get" action="/search/">
                 <div class="input-group search-h">
-                    <input type="text" name="query" id="search" class="form-control" autocomplete="off"
-                           placeholder="Поиск...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default blue" type="submit"><i class="fa fa-search"></i></button>
-                      </span>
+                    
+                   {'!mSearchForm' | snippet: [
+                   'element' => 'msProducts',
+                   ]}
+                   
                 </div>
-            </form>
             <div class="cart_ajax"></div>
         </div>
     </div>

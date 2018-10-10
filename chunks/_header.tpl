@@ -16,7 +16,7 @@
             <div class="col-lg-3 col-sm-4 col-xs-9 header-align ">
                 <a href="#" class="btn gray call_back"><i class="fa fa-phone"></i></a>
                 <div class="left-padding">
-                    <span class="phone-number">+1 (212) 555-1234</span>                    <span class="work-time">info@mail.ru</span>                </div>
+                    <span class="phone-number">+7 (499) 394-64-59</span>                    <span class="work-time">info@mail.ru</span>                </div>
             </div>
         </div>
     </div>

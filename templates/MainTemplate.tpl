@@ -105,7 +105,7 @@
             </div>
         </div>
 
-        <!-- Promo icon -->
+        <!-- 
         <div class="promos">
             <div class="row">
                 <div class="col-sm-4 text-center">
@@ -909,72 +909,35 @@
                 </div>
 
             </div>
+        </div>-->
+        
+        <div id="product-list">
+            <div class="clearfix"><br></div>
+            <div class="row catalog">
+
+                {$_modx->runSnippet('pdoResources@PropertySet', [
+                'parents' => '2',
+                'tpl' => '@FILE /chunks/catalog/tovar.tpl',
+                'includeTVs' => 'image',
+                'where' => '{"class_key":"msCategory"}',
+                'limit' => '100',
+                'depth' => '0',
+                'sortby' => 'menuindex',
+                'sortdir' => 'ASC'
+                ])}
+
+            </div>
         </div>
 
-
         <div class="row">
-            <div class="col-lg-7 col-sm-12 col-xs-12">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
 
                 <h3>О магазине</h3>
                 <br>
-                <p>Это не просто магазин, но и центр обслуживания, место, куда вы можете прийти, чтобы посоветоваться,
-                    выбрать подходящее устройство, где вас научат пользоваться им, дадут советы по эксплуатации и
-                    покажут возможности того, что вы приобрели.</p>
-                <p>Это компания, которая специализируется на продукции одной фирмы, фирмы, достойной особого разговора и
-                    пристального внимания — Apple.</p>
-                <p>Мы продаем только официальные версии с легальной русской прошивкой, что избавляет клиентов от
-                    множества проблем.</p>
-                <p>Это не просто магазин, но и центр обслуживания, место, куда вы можете прийти, чтобы посоветоваться,
-                    выбрать подходящее устройство, где вас научат пользоваться им, дадут советы по эксплуатации и
-                    покажут возможности того, что вы приобрели.</p>
-                <p>Это компания, которая специализируется на продукции одной фирмы, фирмы, достойной особого разговора и
-                    пристального внимания — Apple.</p>
-                <p>Мы продаем только официальные версии с легальной русской прошивкой, что избавляет клиентов от
-                    множества проблем.</p>
-                <!-- plugin hook: 'frontend_homepage' -->
+                {$_modx->resource.content}
 
             </div>
 
-            <div class="col-lg-5 col-sm-12 col-xs-12">
-                <div class="news">
-                    <div class="date">
-                        <div class="threed">21</div>
-                        <div class="month">Сентябрь 2015</div>
-                        <div class="head"><a
-                                    href="http://cms.wa-magazin.ru/blog/rady-soobshchit-chto-do-1-maya-vy-mozhete-priobresti-iphone-5-v-kredit-na-lgotnykh-usloviyakh-sravnimykh-s-usloviyami-rassrochki-na-polgoda-bez-pereplaty/">Рады
-                                сообщить, что до 1 мая вы можете приобрести iPhone 5 в кредит на льготных условиях,
-                                сравнимых с условиями рассрочки на полгода, без перепла</a></div>
-                    </div>
-                    <div class="date">
-                        <div class="threed">21</div>
-                        <div class="month">Сентябрь 2015</div>
-                        <div class="head"><a
-                                    href="http://cms.wa-magazin.ru/blog/rady-soobshchit-chto-do-1-maya-vy-mozhete-priobresti-iphone-5-v-kredit-na-lgotnykh-usloviyakh/">Рады
-                                сообщить, что до 1 мая вы можете приобрести iPhone 5 в кредит на льготных условиях</a>
-                        </div>
-                    </div>
-                    <div class="date">
-                        <div class="threed">17</div>
-                        <div class="month">Декабрь 2014</div>
-                        <div class="head"><a
-                                    href="http://cms.wa-magazin.ru/blog/union-square-cafe-joins-other-victims-of-new-york-citys-rising-rents/">Union
-                                Square Cafe Joins Other Victims of New York</a></div>
-                    </div>
-                    <div class="date">
-                        <div class="threed">07</div>
-                        <div class="month">Ноябрь 2013</div>
-                        <div class="head"><a href="http://cms.wa-magazin.ru/blog/obzor-kingston-wi-drive/">Обзор
-                                Kingston Wi-Drive</a></div>
-                    </div>
-                    <div class="date">
-                        <div class="threed">07</div>
-                        <div class="month">Ноябрь 2013</div>
-                        <div class="head"><a
-                                    href="http://cms.wa-magazin.ru/blog/iphone-5-v-kredit-na-lgotnykh-usloviyakh/">iPhone
-                                5 в кредит на льготных условиях</a></div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     </div>

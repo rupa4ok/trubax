@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{$_modx->resource.pagetitle}</title>
-    <base href="http://s15764.h4.modhost.pro" />
+    <base href="http://trubax.ru" />
     <meta name="Keywords" content=""/>
     <meta name="Description" content=""/>
     <meta name="viewport" content="width=1180"/>

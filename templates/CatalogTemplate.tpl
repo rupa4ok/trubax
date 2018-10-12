@@ -17,11 +17,11 @@
             <div class="clearfix"><br></div>
             <div class="row catalog">
 
-                {$_modx->runSnippet('!msProducts@PropertySet', [
+                {$_modx->runSnippet('msProducts@PropertySet', [
                 'parents' => $_modx->resource.id,
                 'tpl' => '@FILE /chunks/catalog/tovar.tpl',
                 'includeTVs' => 'image',
-                'where' => '{"class_key":"msCategory"}'
+                'where' => '{"class_key":"msCategory"}',
                 ])}
 
             </div>

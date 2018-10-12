@@ -23,7 +23,7 @@
             <div class="clearfix"><br></div>
             <div class="row opis">
                 <div class="col-md-3">
-                    <img src="[[#[[*parent]].image:phpthumbon=`w=170&h=170&zc=1`]]" >
+                    <img src="[[#[[*parent]].image:phpthumbon=`w=170&h=170&zc=0`]]" >
                 </div>
                 <div class="col-md-9">
                     {$_modx->resource.content}

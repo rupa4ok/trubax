@@ -915,8 +915,8 @@
             <div class="clearfix"><br></div>
             <div class="row catalog">
 
-                {$_modx->runSnippet('pdoResources@PropertySet', [
-                'parents' => '2',
+                {$_modx->runSnippet('msProducts@PropertySet', [
+                'parents' => 2,
                 'tpl' => '@FILE /chunks/catalog/tovar.tpl',
                 'includeTVs' => 'image',
                 'where' => '{"class_key":"msCategory"}',

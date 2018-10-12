@@ -7,7 +7,7 @@
                     <a href="{$id|url}"
                        title="{$pagetitle}"><img itemprop="image"
                                                                                     alt="{$pagetitle}"
-                                                                                    src="{$image | phpthumbon : "w=170&h=170&zc=1"}"></a>
+                                                                                    src="{$image | phpthumbon : "w=170&h=170&zc=0"}"></a>
                 </div>
             </div>
             <div class="caption">

@@ -29,7 +29,6 @@
             </div>
             <div class="col-lg-6 col-sm-12">
                 <div class="cart priceblock" id="cart-flyer">
-                    <form id="cart-form" method="post" action="/cart/add/">
                         <div class="stocks">
 
                             <div class="sku-18-stock" style="display: block;">
@@ -41,26 +40,6 @@
                         </div>
 
                         <p class="summary">Артикул: {$_modx->resource.article}</p><hr>
-
-                        <div class="purchase">
-                            <div class="add2cart cart-group">
-                                <input type="hidden" name="product_id" value="1">
-                                <div class="select_quantity">
-                                    <span class="input-group-addon"><a href="#" class="dec_cart"><i class="fa fa-minus"></i></a></span>
-                                    <input type="text" class="quantity qty select_input_cart" name="quantity" value="1" autocomplete="off">
-                                    <span class="input-group-addon"><a href="#" class="inc_cart"><i class="fa fa-plus"></i></a></span>
-                                </div>
-                                <button type="submit" class="blue"><i class="fa fa-shopping-cart"></i>В корзину</button>
-                            </div>
-                            <span class="added2cart" style="display: none;">iMac 21.5" Core i5 2.7ГГц iMac 21.5" теперь <a href="/cart/"><strong>в вашей корзине покупок</strong></a></span>
-                            <div class="to-cart" style="display: none;">
-                                <a href="/cart/" class="btn btn-primary blue">Перейти в корзину</a>
-                            </div>
-                            <div class="to-back" style="display: none;">
-                                <a href="#" class="btn btn-primary gray">Продолжить покупки</a>
-                            </div>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -71,6 +50,7 @@
                     'tpl' => '@FILE /chunks/catalog/options.tpl'
                 ]}
                 {$_modx->resouce.content}
+                <div class="clearfix"></div>
             </div>
         </div>
 

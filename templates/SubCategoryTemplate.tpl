@@ -43,6 +43,7 @@
                     {$_modx->runSnippet('msProducts@PropertySet', [
                     'parents' => $_modx->resource.id,
                     'tpl' => '@FILE /chunks/catalog/subtovar.tpl',
+                    'limit' => '100'
                     ])}
                 </div>
 

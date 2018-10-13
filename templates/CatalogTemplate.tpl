@@ -25,6 +25,11 @@
                 ])}
 
             </div>
+            <div class="row textcat">
+                <div class="col-md-12">
+                    {$_modx->resource.content}
+                </div>
+            </div>
         </div>
     </div>
 </div>

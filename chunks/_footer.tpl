@@ -1,44 +1,33 @@
 <div class="footer">
-    <ul class="inline footer-menu">
-        <li><a href="/">Магазин</a></li>
-        <li>|</li>
-        <li><a href="/blog/">Новости</a></li>
-        <li>|</li>
-        <li><a href="/blog/stati/">Статьи</a></li>
-        <li>|</li>
-        <li><a href="/photos/">Галерея</a></li>
-        <li>|</li>
-        <li><a href="/dostavka/">Доставка</a></li>
-    </ul>
     <div class="row">
-        <div class="col-lg-4 col-md-12 col-xs-12 col-sm-12 hidden-md-down">
-            <div class="copyright">(c) 2016 - Classic</div>
-            {set $info = $_modx->getInfo('', false)}
-            Время работы: {$info.totalTime}
-            Время запросов: {$info.totalTime}
-            Количество запросов: {$info.queries}
-            Источник: {$info.source}
-
-            <div class="webasyst-copyright"></div>                </div>
-        <div class="col-lg-4  col-md-6  col-xs-12 col-sm-12">
+    <div class="col-md-8">
+       {'pdoMenu'|snippet:[
+            'parents' => '0',
+            'outerClass' => 'inline footer-menu',
+            'tpl' => '@INLINE <li[[+classes]]><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+            'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+            'parentClass' => 'tree',
+            'level' => '1'
+            ]} 
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="call_back" style="inline">Отправить запрос</a>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6  col-md-6  col-xs-12 col-sm-12">
             <h5>Следите за нами:</h5>
             <ul class="inline social">
-                <li><a href="http://vk.com/" target="_blank"><i class="fa fa-vk"></i>VKontakte</a>
+                <li><a href="[[++vk]]" target="_blank"><i class="fa fa-vk"></i>VKontakte</a>
                 </li>
-                <li><a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
-                </li>
-                <li><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
-                </li>
-                <li><a href="http://google.com/" target="_blank"><i class="fa fa-google-plus"></i>Google+</a>
-                </li>
-                <li><a href="http://odnoklassniki.ru/" target="_blank"><i class="fa fa-odnoklassniki"></i>Одноклассники</a></li>
-                <li><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
+                <li><a href="[[++inst]]" target="_blank"><i class="fa fa-instagram"></i>Instagram</a>
                 </li>
             </ul>
         </div>
-        <div class="col-lg-4  col-md-6  col-xs-12 col-sm-12">
+        <div class="col-lg-6  col-md-6  col-xs-12 col-sm-12">
             <h5>Контакты:</h5>
-            117447, г. Москва, ул. Тверская, д. 13, офис 506
+            [[++city]]<br>
+            [[++phone]]<br>[[++email]]
         </div>
     </div>
 </div>

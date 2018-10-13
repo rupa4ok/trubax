@@ -6,9 +6,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-{set $info = $_modx->getInfo('', false)}
-Время работы: {$info.totalTime}
-Время запросов: {$info.totalTime}
-Количество запросов: {$info.queries}
-Источник: {$info.source}

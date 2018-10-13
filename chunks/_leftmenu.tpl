@@ -20,14 +20,6 @@
     </div>
 
     <div class="banner hidden-sm-down">
-        <a href="{$_modx->makeUrl(5)}"><img src="wa-data/public/shop/promos/1_v_1463046758.jpg" alt="Моментальная оплата"/>
-        </a>
-        <div class="banner-inner">
-            <h4>Моментальная оплата</h4>
-            <p>На сайте в любое время</p>
-        </div>
-    </div>
-    <div class="banner hidden-sm-down">
         <a href="{$_modx->makeUrl(5)}"><img src="wa-data/public/shop/promos/2_v_1463046797.jpg"
                                                           alt="Доставка по России"/>
         </a>

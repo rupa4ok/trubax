@@ -41,6 +41,10 @@
 
                         <p class="summary">Артикул: {$_modx->resource.article}</p><hr>
                 </div>
+                <button>
+                    отправить запрос
+                </button>
+                 вы можете на нашу почту trubax77@mail.ru
             </div>
         </div>
 

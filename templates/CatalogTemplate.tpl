@@ -22,6 +22,7 @@
                 'tpl' => '@FILE /chunks/catalog/tovar.tpl',
                 'includeTVs' => 'image',
                 'where' => '{"class_key":"msCategory"}',
+                'depth' => '0'
                 ])}
 
             </div>

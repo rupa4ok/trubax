@@ -13,12 +13,12 @@
             {'!msOrder'|snippet:[
                 'tpl' => '@FILE /chunks/cart/order.tpl'
             ]}
-        </div>
-        <div class="row">
+        </div>        <div class="row">
             {'!msGetOrder'|snippet:[
                 'tpl' => '@FILE /chunks/cart/getorder.tpl'
             ]}
         </div>
+
     </div>
     </div>
 

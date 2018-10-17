@@ -44,7 +44,7 @@
                 <button>
                     отправить запрос
                 </button>
-                 вы можете на нашу почту trubax77@mail.ru
+                 вы можете на нашу почту zakaz@trubax.ru
             </div>
         </div>
 

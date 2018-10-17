@@ -1,5 +1,4 @@
 <div class="footer">
-
     <div class="row">
     <div class="col-md-8">
        {'pdoMenu'|snippet:[
@@ -42,7 +41,7 @@
     <div class="dialog-background"></div>
     <div class="dialog-window">
         <div class="cart">
-            <h2 class="header">Feedback</h2>
+            <h2 class="header">Обратная связь</h2>
             <hr>
             <div class="wa-form">
                 <form method="post" action="/" id="feedback">

@@ -23,7 +23,7 @@
             <div class="clearfix"><br></div>
             <div class="row opis">
                 <div class="col-md-3">
-                    <img src="[[#[[*parent]].image:phpthumbon=`w=170&h=170&zc=0`]]" >
+                    <img src="[[#[[*id]].image:phpthumbon=`w=170&h=170&zc=0`]]" >
                 </div>
                 <div class="col-md-9">
                     {$_modx->resource.content}
@@ -38,7 +38,7 @@
                         <div class="second">Наименование</div>
                         <div class="three">Цена (с НДС)</div>
                         <div class="four">Кол-во</div>
-                        <div class="five"></div>
+                        <div class="five"> </div>
                     </div>
                     {$_modx->runSnippet('msProducts@PropertySet', [
                     'parents' => $_modx->resource.id,

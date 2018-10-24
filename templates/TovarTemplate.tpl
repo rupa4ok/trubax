@@ -5,7 +5,7 @@
 {/block}
 
 {block 'main'}
-    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 product">
+    <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 product tovarCenter">
         {'!pdoCrumbs'|snippet:[
         'tplWrapper' => '@INLINE <ul class="breadcrumbs hidden-sm-down">[[+output]]</ul>',
         'showHome' => '0'
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
-                <div class="cart priceblock" id="cart-flyer">
+                <div class="cart priceblock col-md-6" id="cart-flyer">
                         <div class="stocks">
 
                             <div class="sku-18-stock" style="display: block;">
@@ -41,10 +41,22 @@
 
                         <p class="summary">Артикул: {$_modx->resource.article}</p><hr>
                 </div>
-                <button>
+                <div class="col-md-6">
+                    <form class="form-horizontal ms2_form" method="post">
+                        <input type="hidden" name="id" value="[[*id]]"/>
+                        <input style="width: 30%; display: inline" type="number" name="count" id="product_price" class="input-sm form-control" value="1"/>
+                        <button class="" type="submit" name="ms2_action" value="cart/add">
+                            Купить
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="order" style="padding: 10px;">
+                <span style="line-height: 30px;">
+                <a href="#" class="call_back">
                     отправить запрос
-                </button>
-                 вы можете на нашу почту zakaz@trubax.ru
+                </a>
+                вы можете на нашу почту <strong>zakaz@trubax.ru</strong></span>
             </div>
         </div>
 

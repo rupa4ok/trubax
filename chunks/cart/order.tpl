@@ -26,10 +26,6 @@
         </div>
     </div>
 
-    <button type="button" name="ms2_action" value="order/clean" class="btn btn-default ms2_link">
-        <i class="glyphicon glyphicon-remove"></i> {'ms2_frontend_order_cancel' | lexicon}
-    </button>
-
     <hr/>
     <div class="well">
         <div class="col-md-offset-2">

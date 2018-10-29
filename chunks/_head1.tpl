@@ -6,7 +6,7 @@
     <base href="http://trubax.ru" />
     <meta name="Keywords" content=""/>
     <meta name="Description" content=""/>
-    <meta name="viewport" content="width=1180"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="alternate" type="application/rss+xml" title="Демо CMS" href="http://cms.wa-magazin.ru/blog/rss/">
 
@@ -24,7 +24,7 @@
 
     <script type="text/javascript" src="wa-content/js/jquery/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="wa-content/js/jquery/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="wa-content/js/jquery-wa/wa.core.js"></script>
+
 
 
     <link rel="stylesheet" href="wa-data/public/shop/themes/classic/swipebox/css/swipebox.css">
@@ -35,16 +35,11 @@
     <script type="text/javascript" src="wa-data/public/shop/themes/classic/js/jquery.scrollTo.js"></script>
 
     <script type="text/javascript" src="wa-content/js/jquery-ui/jquery.ui.core.min_v1_7_16.js"></script>
-    <script type="text/javascript" src="wa-content/js/jquery-ui/jquery.ui.widget.min_v1_7_16.js"></script>
-    <script type="text/javascript" src="wa-content/js/jquery-ui/jquery.ui.mouse.min_v1_7_16.js"></script>
+
     <script type="text/javascript" src="wa-content/js/jquery-ui/jquery.ui.slider.min_v1_7_16.js"></script>
-    <script type="text/javascript" src="wa-content/js/jquery-plugins/jquery.cookie.js"></script>
-    <script type="text/javascript" src="wa-apps/shop/js/lazy.load_v7_0_0_44568.js"></script>
-    <script type="text/javascript" src="wa-data/public/shop/themes/classic/jquerycountdowntimer/jquery.countdownTimer.min_v_1_7_16.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+    
+
 
     <script type="text/javascript" src="wa-data/public/shop/themes/classic/script.js"></script>
-     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js"></script>
-    
-    
-    
 </head>
